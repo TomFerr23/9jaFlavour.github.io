@@ -28,7 +28,7 @@ ul {
 .container {
     width: 100%;
     height: 100vh;
-    background-image: url(media/9jaFlavorHero2x.png);
+    background-image: url(media/9jaFlavorHero2x.png); 
     background-size: cover;
     background-position: center;
     position: relative;

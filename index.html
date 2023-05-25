@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== FONTAWESOME CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
     <title>9jaFlavour</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +33,7 @@
             </div>
             <div class="right-col">
                 <p>Click Here To Listen</p>
-                <img src="media\Pause Icon.svg" id="icon" alt="play button"> 
+                <img src="media\Play Icon.svg" id="icon" alt="play button"> 
             </div>
         </div>
     </div>
@@ -33,7 +41,139 @@
     <audio id="mySong">
         <source src="media/song.mp3" type="audio/mp3">
     </audio>
+
+
+
+
+    <!-- MUSIC CAROUSEL -->
+    <div class="wrapper">
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Feelin' Good</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon" id="icon-cards">
+            <div class="circle">
+                <div class="triangle" id="playIcon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card2.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Sonic Serenade</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon">
+            <div class="circle">
+                <div class="triangle" id="playIcon3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card5.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Funk Fusion</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon">
+            <div class="circle">
+                <div class="triangle" id="playIcon4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card4.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Soulfire</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon">
+            <div class="circle">
+                <div class="triangle" id="playIcon5"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card6.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Neo Noir Notes</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon">
+            <div class="circle">
+                <div class="triangle" id="playIcon6"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-holder">
+            <img src="media\card3.png" alt="">
+        </div>
+        <div class="text" style="color: rgb(255, 255, 255);">
+            <h2>Enigmatic Echoes</h2>
+            <p>Feel good with this positively timeless ...</p>
+        </div>
+        <div class="play-icon">
+            <div class="circle">
+                <div class="triangle" id="playIcon7"></div>
+            </div>
+        </div>
+    </div>
+
     
+
+
+
+</div>
+
+<audio id="mySong2">
+    <source src="media\song2.mp3" type="audio/mp3">
+</audio>
+
+<audio id="mySong3">
+    <source src="media\song3.mp3" type="audio/mp3">
+</audio>
+
+<audio id="mySong4">
+    <source src="media\song4.mp3" type="audio/mp3">
+</audio>
+
+<audio id="mySong5">
+    <source src="media\song5.mp3" type="audio/mp3">
+</audio>
+
+<audio id="mySong6">
+    <source src="media\song6.mp3" type="audio/mp3">
+</audio>
+
+<audio id="mySong7">
+    <source src="media\song7.mp3" type="audio/mp3">
+</audio>
+    
+
+
+
+
+
+
+
 
 <script>
     var mySong = document.getElementById("mySong");
@@ -49,6 +189,121 @@
         }
     }
 </script>
+
+<script>
+    var mySong2 = document.getElementById("mySong2");
+    var icon2 = document.getElementById("play-icon");
+
+    playIcon.onclick = function(){
+        if(mySong2.paused){
+            mySong2.play();
+            
+        }else{
+            mySong2.pause();
+            
+        }
+    }
+</script>
+
+<script>
+    var mySong3 = document.getElementById("mySong3");
+    var icon3 = document.getElementById("playIcon3");
+
+    playIcon3.onclick = function(){
+        if(mySong3.paused){
+            mySong3.play();
+            
+        }else{
+            mySong3.pause();
+            
+        }
+    }
+</script>
+
+
+<script>
+    var mySong4 = document.getElementById("mySong4");
+    var icon4 = document.getElementById("playIcon4");
+
+    playIcon4.onclick = function(){
+        if(mySong4.paused){
+            mySong4.play();
+            
+        }else{
+            mySong4.pause();
+            
+        }
+    }
+</script>
+
+<script>
+    var mySong5 = document.getElementById("mySong5");
+    var icon5 = document.getElementById("playIcon5");
+
+    playIcon5.onclick = function(){
+        if(mySong5.paused){
+            mySong5.play();
+            
+        }else{
+            mySong5.pause();
+            
+        }
+    }
+</script>
+
+<script>
+    var mySong6 = document.getElementById("mySong6");
+    var icon6 = document.getElementById("playIcon6");
+
+    playIcon6.onclick = function(){
+        if(mySong6.paused){
+            mySong6.play();
+            
+        }else{
+            mySong6.pause();
+            
+        }
+    }
+</script>
+
+<script>
+    var mySong7 = document.getElementById("mySong7");
+    var icon7 = document.getElementById("playIcon7");
+
+    playIcon7.onclick = function(){
+        if(mySong7.paused){
+            mySong7.play();
+            
+        }else{
+            mySong7.pause();
+            
+        }
+    }
+</script>
+
+
+
+
+
+<!--  TO MAKE PLAY CARDS MUSIC BUT ICON DO NOT CHANGE AND BREAK THE HERO PLAY BUTTON
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon-cards");
+
+    icon.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "media/Pause Icon.svg";
+        }else{
+            mySong.pause();
+            icon.src = "media/Play Icon.svg";
+        }
+    }
+</script>
+
+-->
+
+
 
 
 </body>
